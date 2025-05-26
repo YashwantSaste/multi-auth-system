@@ -1,33 +1,83 @@
-# Ignore build output directories
+# ------------------------------------
+# Build output
+# ------------------------------------
 target/
+**/target/
+build/
+**/build/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# STS (Spring Tool Suite) files
+# ------------------------------------
+# Maven
+# ------------------------------------
+.mvn/
+mvnw
+mvnw.cmd
+
+# ------------------------------------
+# Spring Tool Suite (STS)
+# ------------------------------------
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-# IntelliJ IDEA files
+# ------------------------------------
+# IntelliJ IDEA
+# ------------------------------------
 .idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-# NetBeans files
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# ------------------------------------
+# NetBeans
+# ------------------------------------
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+nbproject/private/
 
-# VS Code files
+# ------------------------------------
+# Visual Studio Code
+# ------------------------------------
 .vscode/
+
+# ------------------------------------
+# OS / System
+# ------------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------------
+# Application Secrets & Vault
+# ------------------------------------
+/secrets/
+*.env
+*.key
+*.pem
+*.crt
+vault-token
+bootstrap.yml
+application-local.yml
+application-local.properties
+application-dev.yml
+application-prod.yml
+
+# ------------------------------------
+# Logs & temp files
+# ------------------------------------
+*.log
+*.tmp
+*.pid
+*.gz
+*.out
