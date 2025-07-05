@@ -50,6 +50,17 @@
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
+		<!--
+		Spring Security Starter:
+		Provides core security configuration capabilities for authentication,
+		authorization, method-level access control, and secure HTTP configurations.
+		Required for enabling stateless security filters (SecurityFilterChain)
+		and method-level annotations like @PreAuthorize.
+		-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 
 		<!--
 		  Dependency: Springdoc OpenAPI Starter for Spring WebMVC (UI)
